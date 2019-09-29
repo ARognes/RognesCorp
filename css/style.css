@@ -90,7 +90,6 @@ header{
   background-attachment:fixed;
   background-size: 2000px;
   background-position: top;
-
 }
 
 #strip{
@@ -188,6 +187,11 @@ header{
     background-size: 160%;
     background-position: 33% 0;
     min-height: 48vw;
+  }
+
+  #services{
+    background-size: 1000px;
+    background-position: bottom;
   }
 
   .section_title{
