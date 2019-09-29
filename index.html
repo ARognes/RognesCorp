@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Professional web design">
+		<meta name="keywords" content="web design, affordable web design, professional web design">
+		<meta name="author" content="Austin Rognes">
+		<title>Rognes Corp</title>
+		<link href="./css/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
+	</head>
+	<body>
+
+		<div id="fb-root"></div>
+		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3"></script>
+
+		<header>
+					<div style="margin-left:10%; margin-right:10%;">
+							<button type="button" class="menu_button" onclick="document.getElementById('about').scrollIntoView({ block: 'start',  behavior: 'smooth' });">About</button>
+							<button type="button" class="menu_button" onclick="document.getElementById('services').scrollIntoView({ block: 'start',  behavior: 'smooth' });">Services</button>
+							<button type="button" class="menu_button" onclick="document.getElementById('positions').scrollIntoView({ block: 'start',  behavior: 'smooth' });">Positions</button>
+							<button type="button" class="menu_button" onclick="document.getElementById('contact').scrollIntoView({ block: 'start',  behavior: 'smooth' });">Contact</button>
+					</div>
+		</header>
+
+		<section id="showcase">
+				<h1 style="position:absolute; top:-3.5vw; width:100%; background-color: rgba(0,0,0,0.6);">Rognes Corp</h1>
+				<h6 style="position:absolute; top:20vw; left: 30%;">Leaders in quality<br>construction and<br>infrastructure</h6>
+		</section>
+
+		<section id="about">
+			<div class="container">
+				<div class="about_width">
+					<div id="about_description">
+						<p class="section_title">About</p>
+						<p style="line-height: 1.5; text-indent:40px;">We pride ourselves on being a professional contracting firm specializing in deep sewer, water, large diameter storm sewer lines, auger boring for municipalities, counties and state highway departments. We will constantly strive to: Implement innovative technologies to be a leader in the industry. Provide our customers with the best materials, workmanship and services at a competitive price, while constantly maintaining a higher level of quality and customer service than any of our competitors. Treat our employees with respect and dignity in an open communication environment, providing career opportunities for aggressive people who possess an excellent work ethic, and we will expect support, commitment, loyalty, honesty and constructive feedback from our employees so that we may grow into a mutually successful business.</p>
+					</div>
+					<img src="./img/warren.jpg" alt="Warren" id="warren">
+					<div class="fb-page"
+					  data-tabs="timeline,events"
+					  data-href="https://www.facebook.com/RognesC"
+					  data-width="500"
+						data-height="500"
+					  data-hide-cover="false">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="services">
+			<div class="container">
+				<p class="section_title" style="color:#FFF;">Services</p>
+				<div style="
+				margin-left: 10%;
+			  margin-right: 4%;
+			  width:24%;
+			  float:left;
+			  background-color:#fff;">
+					<img src="./img/sewer.jpg" alt="logo" width="100%">
+					<p class="box_title">Water and sewage line construction</p>
+					<p style="text-align:left; text-indent:8%; padding-left:4%; padding-right:4%;">We specialize in water, sewage line and storm sewer construction with water pipe ranging from 6-48” PVC/Ductile iron, storm sewage ranging from 12-120” in both concrete and pvc and standard sewage diameters of 8-72” up to depths of 50ft. We have the capabilities and answers to handle all of your waste and potable water needs.</p>
+				</div>
+				<div style="
+				width:24%;
+			  float:left;
+			  background-color:#fff;">
+					<img src="./img/hole.jpg" alt="logo" width="100%">
+					<p class="box_title">Boring</p>
+					<p style="text-align:left; text-indent:8%; padding-left:4%; padding-right:4%;">Auger cased boring is a technique where a bore or tunnel is formed from a bore pit to a reception pit by means of a rotating, cutting head. Spoils are removed back to the bore pit by helically wound auger flighting rotating inside a steel casing. Once the reception pit is reached and the auger is removed, the casing remains in the ground and carrier lines are installed. This is the most effective process for jack and bore jobs.</p>
+				</div>
+				<div style="
+				margin-left:4%;
+			  margin-right:10%;
+			  width:24%;
+			  float:left;
+			  background-color:#fff;">
+					<img src="./img/pipe.jpg" alt="logo" width="100%">
+					<p class="box_title">Pipe laying</p>
+					<p style="text-align:left; text-indent:8%; padding-left:4%; padding-right:4%;">Laying pipe for storm or sanitation sewers, drains, and water mains.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="strip">
+			<div class="container" style="padding-bottom:0;">
+				<div style="float:left; width:40%; padding-left:10%; position:relative; top:-50px;">
+					<p style="font-size:60px; color:#fff; margin:20px 0 0 0;">1994</p>
+					<p style="font-size:20px; color:#3D5975; margin:0;">Year<br>Established</p>
+				</div>
+				<div style="float:left; width:40%; padding-right:10%; position:relative; top:-50px;">
+					<p style="font-size:60px; color:#fff; margin:20px 0 0 0;">206</p>
+					<p style="font-size:20px; color:#3D5975; margin:0;">Projects<br>Completed</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="positions">
+			<div class="container">
+				<p class="section_title">Positions</p>
+
+				<div style="padding:0 10% 0 10%;">
+					<div class="tab">
+						<button class="tablinks" onclick="openPosition(event, 'Operator')">Operator</button>
+					  <button class="tablinks" onclick="openPosition(event, 'Laborer')">Laborer</button>
+					  <button class="tablinks" onclick="openPosition(event, 'Pipe Layer')">Pipe Layer</button>
+						<button class="tablinks" onclick="openPosition(event, 'Truck Driver')">Truck Driver</button>
+						<button class="tablinks" onclick="openPosition(event, 'Foreman')">Foreman</button>
+					</div>
+
+					<div id="Operator" class="tabcontent">
+							<h1>Operator Position</h1>
+
+							<h3>General Info:</h3>
+						  <p>Job type: Full time<br>Minimum years experience: One year<br>Salary range: Top scale plus health/vision/dental insurance, 401K with 4% match, life insurance, and other benefits.</p>
+
+							<h3>Company Info:</h3>
+							<p>Rognes Corp is a family-owned business and values long-term employee relationships. We specialize in complex underground utility projects, auger boring and tunneling, and are trusted by Municipalities and Private developers.  Although we require experienced applicants for some positions, we are always looking for employees who are willing to be flexible and learn new skills.</p>
+
+							<h3>Job Description:</h3>
+							<p>Rognes Corp has immediate Operator position openings for a variety of construction equipment.<br>Preferred skills:</p>
+							<ul>
+								<li>Excavator Operator skilled in digging grade, using trench boxes and placing rock bedding</li>
+								<li>Finish grading</li>
+								<li>Utility work</li>
+								<li>Supervisory experience a plus</li>
+							</ul>
+
+							<h3>Required Skills:</h3>
+							<ul>
+								<li>Dependable and willing to report to work on time</li>
+								<li>Able to work extended hours during the construction season</li>
+								<li>Willing to learn new skills, specific to the industry</li>
+							</ul>
+
+							<p><br>Rognes Corp is an Equal Opportunity Employer. Women and Minorities are encouraged to apply.<br>All prospective employees will be subject to a pre-employment drug screen, physical and a background check.</p>
+					</div>
+
+					<div id="Laborer" class="tabcontent">
+							<h1>Laborer Position</h1>
+
+							<h3>General Info:</h3>
+						  <p>Job type: Full time<br>Minimum years experience: One year<br>Salary range: Top scale plus health/vision/dental insurance, 401K with 4% match, life insurance, and other benefits.</p>
+
+							<h3>Company Info:</h3>
+							<p>Rognes Corp is a family-owned business and values long-term employee relationships. We specialize in complex underground utility projects, auger boring and tunneling, and are trusted by Municipalities and Private developers.  Although we require experienced applicants for some positions, we are always looking for employees who are willing to be flexible and learn new skills.</p>
+
+							<h3>Job Description:</h3>
+							<p>There is no description.</p>
+
+							<h3>Required Skills:</h3>
+							<ul>
+								<li>Dependable and willing to report to work on time</li>
+								<li>Able to work extended hours during the construction season</li>
+								<li>Willing to learn new skills, specific to the industry</li>
+								<li>Training will be provided upon hire</li>
+							</ul>
+
+							<h3>Preferred experience:</h3>
+							<ul>
+								<li>Utility installation</li>
+								<li>Concrete structures and flatwork</li>
+								<li>Finish grading</li>
+							</ul>
+
+							<p><br>Rognes Corp is an Equal Opportunity Employer. Women and Minorities are encouraged to apply.<br>All prospective employees will be subject to a pre-employment drug screen, physical and a background check.</p>
+					</div>
+
+					<div id="Pipe Layer" class="tabcontent">
+							<h1>Pipe Layer Position</h1>
+
+							<h3>General Info:</h3>
+						  <p>Job type: Full time<br>Minimum years experience: One year<br>Salary range: Top scale plus health/vision/dental insurance, 401K with 4% match, life insurance, and other benefits.</p>
+
+							<h3>Company Info:</h3>
+							<p>Rognes Corp is a family-owned business and values long-term employee relationships. We specialize in complex underground utility projects, auger boring and tunneling, and are trusted by Municipalities and Private developers.  Although we require experienced applicants for some positions, we are always looking for employees who are willing to be flexible and learn new skills.</p>
+
+							<h3>Job Description:</h3>
+							<p>There is no description.</p>
+
+							<h3>Required Skills:</h3>
+							<ul>
+								<li>Dependable and willing to report to work on time</li>
+								<li>Able to work extended hours during the construction season</li>
+								<li>Willing to learn new skills, specific to the industry</li>
+								<li>Training will be provided upon hire</li>
+							</ul>
+
+							<h3>Preferred experience:</h3>
+							<ul>
+								<li>Utility installation</li>
+								<li>Concrete structures and flatwork</li>
+								<li>Finish grading</li>
+							</ul>
+
+							<p><br>Rognes Corp is an Equal Opportunity Employer. Women and Minorities are encouraged to apply.<br>All prospective employees will be subject to a pre-employment drug screen, physical and a background check.</p>
+					</div>
+
+					<div id="Truck Driver" class="tabcontent">
+							<h1>Truck Driver Position</h1>
+
+							<h3>General Info:</h3>
+						  <p>Job type: Full time<br>Minimum years experience: Three years<br>Minimum education required: Highschool/GED<br>Salary range: Based on experience. In addition to the hourly rate, health/vision/dental insurance and 401K with 4% match and more.</p>
+
+							<h3>Company Info:</h3>
+							<p>Rognes Corp is a family-owned business and values long-term employee relationships. We specialize in complex underground utility projects, auger boring and tunneling, and are trusted by Municipalities and Private developers.  Although we require experienced applicants for some positions, we are always looking for employees who are willing to be flexible and learn new skills.</p>
+
+							<h3>Job Description:</h3>
+							<p>Rognes Corp is currently seeking applicants for Lowboy Tractor Trailer Driver, and Dump Truck Drivers. Applicants must have a CDL. Drivers will be responsible for performing DOT inspections prior to each shift, obeying traffic laws, and reporting any safety or mechanical issues with the truck to a manager. Drivers must also have experience in loading heavy equipment and chaining the load down securely. Truck driving positions are considered Safety Sensitive, and all applicable DOT and FMCSA regulations apply.</p>
+
+							<h3>Required Skills:</h3>
+							<ul>
+								<li>Class A license with air brake endorsement</li>
+								<li>Dependable and willing to report to work on time</li>
+								<li>Able to work extended hours during the construction season</li>
+								<li>Willing to learn new skills, specific to the industry</li>
+							</ul>
+
+							<p><br>Rognes Corp is an Equal Opportunity Employer. Women and Minorities are encouraged to apply.<br>All prospective employees will be subject to a pre-employment drug screen, physical and a background check.</p>
+
+					</div>
+
+					<div id="Foreman" class="tabcontent">
+							<h1>Foreman Position !NOT DONE!</h1>
+
+							<h3>General Info:</h3>
+						  <p>Job type: Full time<br>Minimum years experience: Three years<br>Minimum education required: Highschool/GED<br>Salary range: Based on experience. In addition to the hourly rate, health/vision/dental insurance and 401K with 4% match and more.</p>
+
+							<h3>Company Info:</h3>
+							<p>Rognes Corp is a family-owned business and values long-term employee relationships. We specialize in complex underground utility projects, auger boring and tunneling, and are trusted by Municipalities and Private developers.  Although we require experienced applicants for some positions, we are always looking for employees who are willing to be flexible and learn new skills.</p>
+
+							<h3>Job Description:</h3>
+							<p>Rognes Corp is currently seeking applicants for Lowboy Tractor Trailer Driver, and Dump Truck Drivers. Applicants must have a CDL. Drivers will be responsible for performing DOT inspections prior to each shift, obeying traffic laws, and reporting any safety or mechanical issues with the truck to a manager. Drivers must also have experience in loading heavy equipment and chaining the load down securely. Truck driving positions are considered Safety Sensitive, and all applicable DOT and FMCSA regulations apply.</p>
+
+							<h3>Required Skills:</h3>
+							<ul>
+								<li>Class A license with air brake endorsement</li>
+								<li>Dependable and willing to report to work on time</li>
+								<li>Able to work extended hours during the construction season</li>
+								<li>Willing to learn new skills, specific to the industry</li>
+							</ul>
+
+							<p><br>Rognes Corp is an Equal Opportunity Employer. Women and Minorities are encouraged to apply.<br>All prospective employees will be subject to a pre-employment drug screen, physical and a background check.</p>
+
+					</div>
+				</div>
+
+				<script>
+					document.getElementById("Operator").style.display = "block";
+					document.getElementsByClassName("tablinks")[0].className = document.getElementsByClassName("tablinks")[0].className += " active";
+					function openPosition(evt, posName) {
+					  var i, tabcontent, tablinks;
+					  tabcontent = document.getElementsByClassName("tabcontent");
+					  for (i = 0; i < tabcontent.length; i++) {
+					    tabcontent[i].style.display = "none";
+					  }
+					  tablinks = document.getElementsByClassName("tablinks");
+					  for (i = 0; i < tablinks.length; i++) {
+					    tablinks[i].className = tablinks[i].className.replace(" active", "");
+					  }
+					  document.getElementById(posName).style.display = "block";
+					  evt.currentTarget.className += " active";
+					}
+				</script>
+
+    	</div>
+		</section>
+
+
+
+
+
+		<section style="background-color:#edcd1f;">
+			<div class="container">
+				<p class="section_title" style="color:#000;">Clients</p>
+				<img src="./img/clients/ames-logo.jpg" alt="Ames" width="12%" align="left" style="padding-left:10%;">
+				<img src="./img/clients/waukee-logo.png" alt="Waukee" width="12%" align="left" style="margin:0 1% 0 1%;">
+				<img src="./img/clients/wdm-logo.jpg" alt="West Des Moines" width="12%" align="left" style="margin:0 1% 0 1%;">
+				<img src="./img/clients/excipia-logo.png" alt="Excipia" width="12%" align="left" style="margin:0 1% 0 1%;">
+				<img src="./img/clients/tipox-logo.png" alt="Tipox" width="12%" align="left" style="margin:0 1% 0 1%;">
+				<img src="./img/clients/xenia-logo.jpg" alt="Vide" width="12%" align="left" style="padding-right:10%;">
+			</div>
+		</section>
+
+		<section id="contact">
+			<div class="container" style="padding-bottom:30px;">
+				<p class="section_title">Contact</p>
+					<div id="map" style="overflow:hidden; background:none!important; margin:auto;">
+						<iframe width="1000" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=720%20SW%20Goodwin%20Street%20%20Ankeny%2C%20IA%2050023&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+						</iframe><a href="https://www.enable-javascript.net">enable-javascript.net</a>
+					</div>
+					<div style="color:#C6C6C6;">
+						<div style="float:left; width:30%; padding-left:20%; padding-top:5%;">
+							<p class="box_title"><strong>Head Office</strong></p>
+							<p>720 SW goodwin Street<br>Ankeny, IA 50023<br><br>info@rognescorp.com<br>Tel: (515) 290-7440<br>Fax: (515) 965-0998</p>
+						</div>
+						<div style="float:left; width:30%; padding-right:20%; padding-top:5%;">
+							<p class="box_title"><strong>Employment</strong></p>
+							<p>To apply for a job with Rognes Corp,<br>send a cover letter and C.V. to:</p>
+							<a style="font-size:inherit; color:#fff; text-decoration:none;" href="mailto:info@rognescorp.com?subject = Feedback&body = Message">info@rognescorp.com</a>
+						</div>
+					</div>
+			</div>
+		</section>
+
+		<footer id="footer">
+			<p>Rognes Corp, Copyright &copy; 2019<span style="display:block;float:right;">Website made by Austin Rognes September, 2019</span></p>
+		</footer>
+	</body>
+</html>
