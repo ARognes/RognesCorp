@@ -26,6 +26,20 @@
 		</header>
 
 		<section id="showcase">
+				<div id="showcase_background"></div>
+				<script>
+				  var image = new Image();
+				  image.src = 'img/boss.jpg';
+				  console.log(image.src);
+				  image.onload = function () {
+					console.log("arst");
+					var div = document.getElementById("showcase_background");
+					div.style.backgroundImage = "url('img/boss.jpg')";
+					div.style.filter = "blur(0px)";
+					div.style.style.webkitfilter = "blur(0px)";
+				  }
+				</script>
+			
 				<h1 style="position:absolute; top:-3.5vw; width:100%; background-color: rgba(0,0,0,0.6);">Rognes Corp</h1>
 				<h6 style="position:absolute; top:20vw; left: 30%;">Leaders in quality<br>construction and<br>infrastructure</h6>
 		</section>
