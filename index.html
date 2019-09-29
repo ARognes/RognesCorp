@@ -10,9 +10,20 @@
 		<link href="./css/style.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
+		<script>
+			function backgroundImage(url, element) {
+				var image = new Image();
+				image.src = url;
+				image.onload = function () {
+					var div = document.getElementById(element);
+					div.style.backgroundImage = "url(" + url + ")";
+					div.style.filter = "blur(0px)";
+					div.style.webkitfilter = "blur(0px)";
+				}
+			}
+		</script>
 	</head>
 	<body>
-
 		<div id="fb-root"></div>
 		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3"></script>
 
@@ -28,16 +39,9 @@
 		<section id="showcase">
 				<div id="showcase_background"></div>
 				<script>
-				  var image = new Image();
-				  image.src = 'img/boss.jpg';
-					image.onload = function () {
-					var div = document.getElementById("showcase_background");
-					div.style.backgroundImage = "url('img/boss.jpg')";
-					div.style.filter = "blur(0px)";
-					div.style.style.webkitfilter = "blur(0px)";
-				  }
+				  backgroundImage('img/boss.jpg', "showcase_background");
 				</script>
-			
+
 				<h1 style="position:absolute; top:-3.5vw; width:100%; background-color: rgba(0,0,0,0.6);">Rognes Corp</h1>
 				<h6 style="position:absolute; top:20vw; left: 30%;">Leaders in quality<br>construction and<br>infrastructure</h6>
 		</section>
@@ -62,6 +66,9 @@
 		</section>
 
 		<section id="services">
+			<script>
+				backgroundImage('img/bulldozers.jpg', "services");
+			</script>
 			<div class="container">
 				<p class="section_title" style="color:#FFF;">Services</p>
 				<div style="
