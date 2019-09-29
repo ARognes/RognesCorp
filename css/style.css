@@ -58,7 +58,7 @@ header{
   font-style:bold;
   color:#FFF;
   text-align:center;
-  background:url('../img/boss.jpg') no-repeat;
+  background:url('../img/boss.jpg'), url('../img/boss_lowres.jpg') no-repeat;
   background-attachment:fixed;
   background-size: 100%;
   background-position: top;
