@@ -168,7 +168,7 @@ header{
 
 @media (max-width: 800px) {
   body{
-    font: 8px/1.3 "Roboto", sans-serif;
+    font: 14px/1.3 "Roboto", sans-serif;
     padding:0;
     margin:0;
     background-color:#000;
