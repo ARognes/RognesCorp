@@ -58,10 +58,6 @@ header{
   font-style:bold;
   color:#FFF;
   text-align:center;
-  /*background:url('../img/boss.jpg'), url('../img/boss_lowres.jpg') no-repeat;
-  background-attachment:fixed;
-  background-size: 100%;
-  background-position: top;*/
   min-height: 48vw;
 }
 
@@ -75,6 +71,12 @@ header{
   min-height: 48vw;
   filter: blur(4px);
   -webkit-filter: blur(4px);
+}
+
+#showcase_description{
+  position:absolute;
+  top:20vw;
+  left: 30%;
 }
 
 #about_description{
@@ -92,9 +94,34 @@ header{
   background-position: top;
 }
 
+#box1{
+  margin-left: 10%;
+  margin-right: 4%;
+  width:24%;
+  float:left;
+  background-color:#fff;
+}
+
+#box2{
+  width:24%;
+  float:left;
+  background-color:#fff;
+}
+
+#box3{
+  margin-left:4%;
+  margin-right:10%;
+  width:24%;
+  float:left;
+  background-color:#fff;
+}
+
 #strip{
   background-color:#edcd1f;
-  //max-height:200px;
+}
+
+#positions_outline{
+  padding:0 10% 0 10%;
 }
 
 .about_width{
@@ -183,15 +210,42 @@ header{
   }
 
   #showcase{
-    padding:30px 0 0 0;
     background-size: 160%;
     background-position: 33% 0;
     min-height: 48vw;
   }
 
+  #showcase_description{
+    position:absolute;
+    top:40vw;
+    left: 30%;
+  }
+
   #services{
     background-size: 800px;
     background-position: bottom;
+  }
+
+  #box1{
+    margin: 0 5% 10% 5%;
+    width:90%;
+    float:left;
+    background-color:#fff;
+  }
+
+  #box2{
+    margin: 0 5% 10% 5%;
+    margin-right: 5%;
+    width:90%;
+    float:left;
+    background-color:#fff;
+  }
+
+  #box3{
+    margin: 0 5% 10% 5%;
+    width:90%;
+    float:left;
+    background-color:#fff;
   }
 
   .section_title{
@@ -221,6 +275,10 @@ header{
 
   #warren{
     display: none;
+  }
+
+  #positions_outline{
+    padding:0 2% 0 2%;
   }
 
   .fb-page{
